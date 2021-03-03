@@ -1,0 +1,16 @@
+@import '../../../assets/styles/vars';
+
+#top-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 55px 28px 70px;
+  background-color: $color-white;
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-title;
+    text-transform: uppercase;
+  }
+}

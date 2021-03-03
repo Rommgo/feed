@@ -1,0 +1,148 @@
+@import '../../../assets/styles/vars';
+
+#modal-window {
+  .MuiPaper-root {
+    display: flex;
+    align-items: center;
+    width: 545px;
+    padding: 47px 0;
+    background: $color-white;
+    box-shadow: 0 0 9px rgba(0, 72, 241, 0.1);
+    border-radius: 4px;
+    color: $color-black;
+  }
+
+  .inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 465px;
+    padding: 0 35px;
+    border: 2px solid $color-accent;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .title {
+    width: fit-content;
+    margin: -12px 0 26px -10px;
+    padding: 0 10px;
+    background-color: $color-white;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorText);
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .unit {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-shrink: 0;
+      width: 100%;
+      margin: 0 0 30px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    input {
+      width: 100%;
+      height: 43px;
+      padding: 0 20px 0 15px;
+      border-radius: 4px;
+      color: $color-title;
+      font-size: 14px;
+      line-height: 43px;
+      box-sizing: border-box;
+      border: 1px solid $color-accent;
+    }
+
+    .MuiInput-underline:before,
+    .MuiInput-underline:after{
+      display: none;
+    }
+
+    .general-select {
+      width: 100%;
+    }
+
+    .MuiGrid-container {
+      width: 100px;
+    }
+  }
+
+  .actions {
+    .cancel {
+      width: 130px;
+      &-delete {
+        width: 131px;
+        background-color: var(--colorWhite);
+        border: 1px solid var(--colorAccent);
+      }
+    }
+
+    .submit {
+      width: 245px;
+
+      &-delete {
+        width: 246px;
+        color: var(--white);
+      }
+    }
+
+    &.center {
+      justify-content: center;
+    }
+  }
+
+  &.preview {
+    .MuiPaper-root {
+      width: 830px;
+    }
+
+    .inside {
+      justify-content: space-between;
+      width: 742px;
+      min-height: 612px;
+    }
+
+    .MuiDialog-paperWidthSm {
+      min-width: 830px;
+    }
+
+    .preview-frame {
+      margin: 0 0 10px;
+      border-radius: 6px;
+    }
+  }
+  .unit {
+    .Mui-error {
+      input {
+        border-color: var(--colorTomato);
+      }
+    }
+  }
+}
+

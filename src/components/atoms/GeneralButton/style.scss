@@ -1,0 +1,44 @@
+@import '../../../assets/styles/vars';
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 34px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .2s;
+
+  &:hover {
+    box-shadow: 2px 2px 7px rgba(104, 94, 176, 0.26);
+  }
+
+  &.cancel {
+    background-color: $color-white;
+    border: 1px solid $color-error;
+    color: $color-error;
+
+    &-delete {
+      border-color: $color-accent;
+      color: $color-accent;
+    }
+  }
+
+  &.submit {
+    background-color: $color-accent;
+    color: $color-white;
+
+    &-delete {
+      background-color: $color-error;
+    }
+  }
+
+  &.action {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+
+}

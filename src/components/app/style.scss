@@ -1,0 +1,47 @@
+@import '../../assets/styles/custom-reset';
+@import '../../assets/styles/vars';
+
+@import "~react-redux-toastr/src/styles/index";
+
+.loader-wrapper-g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-container {
+  $width: 100vh;
+  min-height: calc( #{$width} - 129px);
+};
+
+/*toastr styles*/
+.toastr-custom.redux-toastr .toastr .close-toastr {
+  color: $color-white;
+}
+
+.toastr-custom.redux-toastr .toastr .rrt-middle-container .rrt-title {
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.toastr-custom.redux-toastr .toastr .rrt-middle-container .rrt-text {
+  line-height: 18px;
+}
+
+.redux-toastr .toastr.rrt-success,
+.redux-toastr .toastr.rrt-error,
+.redux-toastr .toastr .rrt-left-container .rrt-holder {
+  display: flex;
+  align-items: center;
+}
+
+.redux-toastr .toastr .rrt-left-container .rrt-holder {
+  justify-content: center;
+}
+
+.redux-toastr .toastr .rrt-left-container .toastr-icon {
+  margin-top: 0;
+}
+/* end toastr styles */

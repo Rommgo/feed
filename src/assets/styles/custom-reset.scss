@@ -1,0 +1,37 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, input:focus, textarea, textarea:focus, select, option {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}

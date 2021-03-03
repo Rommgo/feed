@@ -1,0 +1,144 @@
+@import '../../../assets/styles/vars';
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: $color-accent;
+  z-index: 3;
+
+  .logo {
+    display: block;
+    width: 90px;
+    height: 21px;
+    margin: 0 210px 0 0;
+    transition: margin .2s ease-in;
+    position: relative;
+    span {
+      position: absolute;
+      white-space: nowrap;
+      color: $color-white;
+      font-size: 18px;
+    }
+
+    &.closed-menu {
+      margin: 0 60px 0 0;
+    }
+  }
+
+  .back-link {
+    position: relative;
+    display: block;
+    margin: 0 auto 0 0;
+    color: $color-white;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -32px;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 10px;
+      background: url("../../../assets/images/back-arrow.svg") center no-repeat;
+      background-size: contain;
+      filter: brightness(3);
+    }
+  }
+
+  .controll-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile {
+    color: $color-white;
+
+    img {
+      margin: 0 10px 0 0;
+      filter: brightness(3);
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 270px;
+      padding: 20px 30px 30px;
+      background-color: $color-white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      font-size: 12px;
+      color: $color-title;
+
+      .MuiButtonBase-root {
+        height: 30px;
+        span {
+          align-items: baseline;
+          padding: 1px 0 0 0;
+          font-size: 12px;
+          text-transform: none;
+          color: $color-accent;
+        }
+
+        img {
+          height: 13px;
+          margin: 0 5px 0 0;
+        }
+
+        &.close {
+          min-width: 30px;
+
+          img {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .top-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 19px;
+    margin: 0 0 27px;
+    border-bottom: 1px solid rgba(63, 43, 150, 0.15);
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-accent;
+
+    img {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  .actions {
+    flex-shrink: 0;
+  }
+
+  .phone, .email, .website {
+    display: flex;
+    align-items: center;
+    margin: 0 0 27px;
+
+    img {
+      margin: 0 15px 0 0;
+    }
+  }
+
+  .exit {
+    width: 65px;
+    justify-content: flex-start;
+    margin: auto 0 0 0;
+    padding: 6px 0;
+  }
+
+}

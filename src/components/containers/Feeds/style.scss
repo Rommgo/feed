@@ -1,0 +1,124 @@
+@import '../../../assets/styles/vars';
+
+#feeds{
+  .th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.event {
+      width: 200%;
+    }
+  }
+
+  .table-thead .th {
+    white-space: initial;
+    line-height: 18px;
+
+  }
+  .MuiFormControl-root {
+    position: relative;
+  }
+  .dots-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+  .MuiInput-underline:before,
+  .MuiSelect-icon {
+    display: none;
+  }
+  .MuiSelect-select:focus {
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .MuiInput-underline:after {
+    border-bottom: none;
+  }
+}
+.feed-modal {
+  .MuiTextField-root {
+    width: 100%;
+  }
+}
+.MuiMenu-list .delete-client-item {
+  color: $color-error;
+}
+
+
+.main .table-thead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 55px 0 70px;
+  background-color: $color-accent;
+  .th {
+    display: flex;
+    align-items: center;
+    color: $color-white;
+  }
+}
+
+.table-thead .middle-part,
+.table-content .middle-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.table-thead .th,
+.table-content .th {
+  flex-grow: 1;
+  width: 100%;
+  padding: 3px 7px;
+  font-weight: 600;
+  word-break: break-word;
+
+  &.small {
+    flex-shrink: 0;
+    width: 65px;
+  }
+}
+
+
+.table-content {
+  padding: 0;
+  width: 100%;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 55px 0 70px;
+    background: #8080802b;
+    box-shadow: inset 1px 1px 1px rgba(109, 150, 253, 0.04);
+    transition: all .15s;
+
+    &:nth-child(even) {
+      background-color: $color-white;
+    }
+
+    &:hover {
+      box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.14);
+    }
+
+    .th {
+      font-size: 14px;
+      font-weight: 400;
+      color: $color-black;
+      line-height: 18px;
+    }
+    .actions .MuiIconButton-root {
+      width: 40px;
+      height: 45px;
+      border-radius: 6px;
+    }
+  }
+}
+
