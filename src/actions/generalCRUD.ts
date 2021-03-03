@@ -40,7 +40,7 @@ export const generalCRUD: generalCRUDActionType = {
         const token = localStorage.getItem("token");
         try {
             const response = await generalCRUDApi.editFeed(path, token, id, data);
-            if (response.status === 200) {
+            if (response) {
                 return response;
             }
         } catch (e) {
